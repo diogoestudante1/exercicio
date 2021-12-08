@@ -74,7 +74,7 @@
   
   {"id": 10,
     "jogadores"
-     "nome": Agassi 
+     "nome": Agassi,
      "idade": 51,
      "título" : true,
      "país" : " EUA"
