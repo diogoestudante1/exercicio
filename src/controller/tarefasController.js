@@ -27,9 +27,21 @@ const postTarefa = (req, res) => {
   })
   };
 
+  const getById =(req, res) => {
+    const id = req.params.id;
+    tarefas.find ({ id } , function (err, tarefas) {
+      if( err ) {
+        res . status (500) . send({ message : err . message } )
+  }
+
+  res . status(200).send(tarefas);
+})
+  };
+
 
 
 module.exports = {
   getAll,
   postTarefa,
+  getById,
 };
